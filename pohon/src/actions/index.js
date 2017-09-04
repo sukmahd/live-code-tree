@@ -24,7 +24,7 @@ export const grow = () => {
   return (dispatch, getState) => {
     var newUmur = getState().pohonStore.umur + 1
     var newFruit = Math.floor((Math.random() * 10) + 1);
-    var newKeranjang = getState().pohonStore.keranjang + newFruit
+    var newKeranjang = parseInt(getState().pohonStore.keranjang)  + parseInt(newFruit) 
     
     var payload = {
       umur: newUmur,

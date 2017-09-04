@@ -1,9 +1,9 @@
 const initialState = {
     username: '',
-    keranjang: [],
+    keranjang: 0,
     name: '',
     umur: 0,
-    fruit: []
+    fruit: 0
 }
 
 export default (state = initialState, actions) => {
