@@ -2,7 +2,7 @@ const initialState = {
     username: '',
     keranjang: [],
     name: '',
-    umur: '',
+    umur: 0,
     fruit: []
 }
 
@@ -12,8 +12,8 @@ export default (state = initialState, actions) => {
       return {...state, username: actions.payload.username, name: actions.payload.name }
     case 'GROW': 
       return {...state, umur: actions.payload.umur, fruit: actions.payload.fruit, keranjang: actions.payload.keranjang}
-    case 'DEATH':
-      return state
+    case 'HARVEST':
+      return {...state, keranjang: actions.payload.keranjang}
     default:
       return state
   }

@@ -28,7 +28,7 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Welcome! {this.state.username}</Text>
+          <Text style={styles.title}>Welcome!</Text>
         </View>
         <View style={styles.formContainer}>
           <TextInput

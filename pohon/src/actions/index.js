@@ -22,14 +22,14 @@ export const update_pohon = (data) => (
 
 export const grow = () => {
   return (dispatch, getState) => {
-    var newUmur = getState.pohonStore.umur + 1
-    var newFruit = 5
-    var newKeranjang = getState.pohonStore.keranjang + 5
+    var newUmur = getState().pohonStore.umur + 1
+    var newFruit = Math.floor((Math.random() * 10) + 1);
+    var newKeranjang = getState().pohonStore.keranjang + newFruit
     
     var payload = {
       umur: newUmur,
       fruit: newFruit,
-      keranjang:newKeranjang
+      keranjang: newKeranjang
     }
     
     dispatch(update_pohon(payload))
