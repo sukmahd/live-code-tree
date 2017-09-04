@@ -77,7 +77,9 @@ const mapStateToProps = (state) => {
   return {
     username: state.pohonStore.username,
     name: state.pohonStore.name,
-    umur: state.pohonStore.umur
+    umur: state.pohonStore.umur,
+    keranjang: state.pohonStore.keranjang,
+    fruit: state.pohonStore.fruit
   }
 }
 
